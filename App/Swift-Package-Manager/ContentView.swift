@@ -7,10 +7,12 @@
 //
 
 import SwiftUI
+import Utilities
 
 struct ContentView: View {
+    let testing = TestString()
     var body: some View {
-        Text("Hello, World!")
+        Text(testing.helloWorld)
     }
 }
 

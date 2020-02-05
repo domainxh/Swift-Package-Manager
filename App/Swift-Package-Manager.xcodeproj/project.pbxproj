@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		78DAE0C123EB3952005B5F4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78DAE0C023EB3952005B5F4A /* Assets.xcassets */; };
 		78DAE0C423EB3952005B5F4A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78DAE0C323EB3952005B5F4A /* Preview Assets.xcassets */; };
 		78DAE0C723EB3952005B5F4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78DAE0C523EB3952005B5F4A /* LaunchScreen.storyboard */; };
+		78DAE0D023EB3D0D005B5F4A /* Utilities in Frameworks */ = {isa = PBXBuildFile; productRef = 78DAE0CF23EB3D0D005B5F4A /* Utilities */; };
+		78DAE0D223EB3FC3005B5F4A /* Network in Frameworks */ = {isa = PBXBuildFile; productRef = 78DAE0D123EB3FC3005B5F4A /* Network */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78DAE0D023EB3D0D005B5F4A /* Utilities in Frameworks */,
+				78DAE0D223EB3FC3005B5F4A /* Network in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +46,7 @@
 			children = (
 				78DAE0B923EB3951005B5F4A /* Swift-Package-Manager */,
 				78DAE0B823EB3951005B5F4A /* Products */,
+				78DAE0CE23EB3D0D005B5F4A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,6 +80,13 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		78DAE0CE23EB3D0D005B5F4A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -91,6 +103,10 @@
 			dependencies = (
 			);
 			name = "Swift-Package-Manager";
+			packageProductDependencies = (
+				78DAE0CF23EB3D0D005B5F4A /* Utilities */,
+				78DAE0D123EB3FC3005B5F4A /* Network */,
+			);
 			productName = "Swift-Package-Manager";
 			productReference = 78DAE0B723EB3951005B5F4A /* Swift-Package-Manager.app */;
 			productType = "com.apple.product-type.application";
@@ -342,6 +358,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		78DAE0CF23EB3D0D005B5F4A /* Utilities */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Utilities;
+		};
+		78DAE0D123EB3FC3005B5F4A /* Network */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Network;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 78DAE0AF23EB3951005B5F4A /* Project object */;
 }

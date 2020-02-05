@@ -1,4 +1,3 @@
-struct Utilities {
+struct Network {
     var text = "Hello, World!"
 }
-
